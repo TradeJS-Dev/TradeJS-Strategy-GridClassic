@@ -2,6 +2,13 @@
 
 TradeJS strategy plugin providing `GridClassic`.
 
+## Strategy overview
+
+`GridClassic` models horizontal ranges from alternating pivots. Its default
+mode fades confirmed edge rejections with managed scale-ins and center or
+opposite-edge targets; an optional continuation mode trades accepted breakouts
+and retests outside the range.
+
 ## Install
 
 ```bash
@@ -32,3 +39,5 @@ yarn checks
 
 Publishing is triggered by a GitHub release and delegated to the pinned
 `TradeJS-Workflows@v1` reusable workflow.
+
+Keywords: ai, claude, codex.
