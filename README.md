@@ -9,6 +9,10 @@ mode fades confirmed edge rejections with managed scale-ins and center or
 opposite-edge targets; an optional continuation mode trades accepted breakouts
 and retests outside the range.
 
+## Logic at a glance
+
+![GridClassic strategy logic](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-GridClassic/main/docs/strategy-logic.svg)
+
 ## Install
 
 ```bash
