@@ -1,6 +1,6 @@
 {
   "name": "@tradejs/strategy-grid-classic",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Range-based grid strategy for edge mean reversion or breakout continuation, with pivot ranges and managed scale entries for TradeJS.",
   "type": "module",
   "packageManager": "yarn@4.13.0",
