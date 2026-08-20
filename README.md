@@ -13,6 +13,15 @@ and retests outside the range.
 
 ![GridClassic strategy logic](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-GridClassic/main/docs/strategy-logic.svg)
 
+## Signal on an example chart
+
+The default mean-reversion mode is shown: alternating pivots define the range, then a confirmed lower-edge rejection targets the center or far edge.
+
+![GridClassic signal on an illustrative ticker chart](https://raw.githubusercontent.com/TradeJS-Dev/TradeJS-Strategy-GridClassic/main/docs/signal-example.svg)
+
+The illustration is schematic, not market data. Exact thresholds, confirmation
+rules, and risk parameters come from the active TradeJS strategy config.
+
 ## Install
 
 ```bash
