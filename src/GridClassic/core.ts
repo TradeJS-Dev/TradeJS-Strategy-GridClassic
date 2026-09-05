@@ -116,10 +116,10 @@ const getRiskRates = (config: GridClassicConfig) => {
     Number(config.GRIDCLASSIC_RISK_SLIPPAGE_BPS ?? 0),
   );
   const executionModelBps =
-    Math.max(0, Number(config.SLIPPAGE_BASE_BPS ?? 0)) +
-    Math.max(0, Number(config.SLIPPAGE_MARKET_IMPACT_BPS ?? 0));
+    Math.max(0, Number(config.RISK_SLIPPAGE_BPS ?? 0)) +
+    Math.max(0, Number(config.RISK_MARKET_IMPACT_BPS ?? 0));
   return {
-    feeRate: Math.max(0, Number(config.FEE_PERCENT ?? 0)),
+    feeRate: Math.max(0, Number(config.RISK_FEE_RATE ?? 0)),
     slippageRate: Math.max(configuredSlippageBps, executionModelBps) / 10_000,
   };
 };
