@@ -299,7 +299,7 @@ describe("GridClassic core", () => {
       const core = await createGridClassicCore({
         config: {
           ...BASE_TEST_CONFIG,
-          FEE_PERCENT: 0,
+          RISK_FEE_RATE: 0,
           GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
         } as GridClassicConfig,
         data: [],
@@ -367,7 +367,7 @@ describe("GridClassic core", () => {
         GRIDCLASSIC_CONTINUATION_TARGET_RANGE_MULT: 1,
         GRIDCLASSIC_CONTINUATION_STOP_INSIDE_RANGE_FRACTION: 0.2,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
       } as GridClassicConfig,
       data: [],
       strategyApi,
@@ -443,7 +443,7 @@ describe("GridClassic core", () => {
         GRIDCLASSIC_FAILED_BREAKOUT_REVERSAL_ENABLED: true,
         GRIDCLASSIC_BREAKOUT_TOLERANCE_ATR: 0.25,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 10,
-        FEE_PERCENT: 0.001,
+        RISK_FEE_RATE: 0.001,
       } as GridClassicConfig,
       data: [],
       strategyApi,
@@ -523,7 +523,7 @@ describe("GridClassic core", () => {
         GRIDCLASSIC_FAILED_BREAKOUT_REVERSAL_ENABLED: true,
         GRIDCLASSIC_BREAKOUT_TOLERANCE_ATR: 0.25,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
       } as GridClassicConfig,
       data: [],
       strategyApi,
@@ -589,7 +589,7 @@ describe("GridClassic core", () => {
         GRIDCLASSIC_FAILED_BREAKOUT_REVERSAL_ENABLED: true,
         GRIDCLASSIC_BREAKOUT_TOLERANCE_ATR: 0.25,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
       } as GridClassicConfig,
       data: [],
       strategyApi,
@@ -651,7 +651,7 @@ describe("GridClassic core", () => {
       GRIDCLASSIC_FAILED_BREAKOUT_REVERSAL_ENABLED: true,
       GRIDCLASSIC_BREAKOUT_TOLERANCE_ATR: 0.25,
       GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
-      FEE_PERCENT: 0,
+      RISK_FEE_RATE: 0,
     } as GridClassicConfig;
     const firstApi = makeStrategyApi({
       getPosition: () => null,
@@ -692,7 +692,7 @@ describe("GridClassic core", () => {
       stateController: sharedStateController,
     });
     const isolatedCore = await createGridClassicCore({
-      config: { ...config, FEE_PERCENT: 0.002 },
+      config: { ...config, RISK_FEE_RATE: 0.002 },
       data: [],
       strategyApi: isolatedApi,
     } as any);
@@ -778,7 +778,7 @@ describe("GridClassic core", () => {
     const core = await createGridClassicCore({
       config: {
         ...BASE_TEST_CONFIG,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
       } as GridClassicConfig,
       data: [],
@@ -824,7 +824,7 @@ describe("GridClassic core", () => {
     const core = await createGridClassicCore({
       config: {
         ...BASE_TEST_CONFIG,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
         GRIDCLASSIC_REQUIRE_REJECTION_FOR_ADD: true,
       } as GridClassicConfig,
@@ -900,7 +900,7 @@ describe("GridClassic core", () => {
     const core = await createGridClassicCore({
       config: {
         ...BASE_TEST_CONFIG,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
       } as GridClassicConfig,
       data: [],
@@ -947,7 +947,7 @@ describe("GridClassic core", () => {
     const core = await createGridClassicCore({
       config: {
         ...BASE_TEST_CONFIG,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
         GRIDCLASSIC_BREAKOUT_CONFIRM_BARS: 2,
       } as GridClassicConfig,
@@ -1006,7 +1006,7 @@ describe("GridClassic core", () => {
     const core = await createGridClassicCore({
       config: {
         ...BASE_TEST_CONFIG,
-        FEE_PERCENT: 0,
+        RISK_FEE_RATE: 0,
         GRIDCLASSIC_RISK_SLIPPAGE_BPS: 0,
         GRIDCLASSIC_BREAKOUT_CONFIRM_BARS: 2,
         GRIDCLASSIC_FAILED_REJECTION_EXIT_BARS: 1,
